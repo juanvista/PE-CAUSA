@@ -57,9 +57,9 @@ def ingresar_notas():
     seccion = input("Ingrese la sección: ")
     notas = Notas()
     for alumno in [user for user in usuarios if user.asignatura == asignatura and user.seccion == seccion and user.rol == 'alumno']:
-        nota1 = float(input(f"Ingrese la nota 1 de {alumno.nombre} {alumno.apellidos}: "))
-        nota2 = float(input(f"Ingrese la nota 2 de {alumno.nombre} {alumno.apellidos}: "))
-        nota3 = float(input(f"Ingrese la nota 3 de {alumno.nombre} {alumno.apellidos}: "))
+        nota1 = float(input("Ingrese la nota 1 de {alumno.nombre} {alumno.apellidos}: "))
+        nota2 = float(input("Ingrese la nota 2 de {alumno.nombre} {alumno.apellidos}: "))
+        nota3 = float(input("Ingrese la nota 3 de {alumno.nombre} {alumno.apellidos}: "))
         notas.agregar_notas(alumno, nota1, nota2, nota3)
     notas.mostrar_notas()
 
