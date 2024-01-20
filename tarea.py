@@ -25,7 +25,7 @@ def ingresar_usuario():
     else:
         nuevo_usuario = Usuario(nombre, apellidos, edad, asignatura, rol, seccion)
         usuarios.append(nuevo_usuario)
-        print(f"Usuario {rol} agregado con éxito.")
+        print("Usuario {rol} agregado con éxito.")
 
 def ingresar_notas():
     docente = validar_docente()
@@ -55,10 +55,10 @@ def actualizar_alumno():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print(f"\nDatos actuales del alumno {nombre} {apellidos}:")
-                print(f"Sección: {alumno_encontrado.seccion}")
-                print(f"Asignatura: {alumno_encontrado.asignatura}")
-                print(f"Edad: {alumno_encontrado.edad}")
+                print("\nDatos actuales del alumno ,nombre, ,apellidos,:")
+                print("Sección: ,alumno_encontrado.seccion, ")
+                print("Asignatura: ,alumno_encontrado.asignatura,")
+                print("Edad: ,alumno_encontrado.edad, ")
 
                 confirmacion = input("¿Está seguro de actualizar este alumno? (SI/NO): ").upper()
                 if confirmacion == "SI":
@@ -85,10 +85,10 @@ def eliminar_alumno():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print(f"\nDatos del alumno {nombre} {apellidos} a eliminar:")
-                print(f"Sección: {alumno_encontrado.seccion}")
-                print(f"Asignatura: {alumno_encontrado.asignatura}")
-                print(f"Edad: {alumno_encontrado.edad}")
+                print("\nDatos del alumno ,nombre, ,apellidos, a eliminar:")
+                print("Sección: ,alumno_encontrado.seccion, ")
+                print("Asignatura: ,alumno_encontrado.asignatura, ")
+                print("Edad: ,alumno_encontrado.edad, ")
 
                 confirmacion = input("¿Está seguro de eliminar este alumno? (SI/NO): ").upper()
                 if confirmacion == "SI":
@@ -112,11 +112,11 @@ def listar_por_secciones():
         if alumnos_seccion:
             print("\nLista de Alumnos:")
             for alumno in alumnos_seccion:
-                print(f"\nNombre: {alumno.nombre} {alumno.apellidos}")
-                print(f"Sección: {alumno.seccion}")
-                print(f"Asignatura: {alumno.asignatura}")
+                print("\nNombre: ,alumno.nombre, ,alumno.apellidos,")
+                print("Sección: ,alumno.seccion,")
+                print("Asignatura: ,alumno.asignatura,")
                 if hasattr(alumno, 'notas'):
-                    print(f"Notas: {alumno.notas}")
+                    print("Notas: ,alumno.notas, ")
                 else:
                     print("Notas: No ingresadas")
             print(f"\nDocente a cargo: {docente.nombre} {docente.apellidos}")
@@ -137,11 +137,11 @@ def mostrar_por_alumnos():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print(f"\nDatos del alumno {nombre} {apellidos}:")
-                print(f"Sección: {alumno_encontrado.seccion}")
-                print(f"Asignatura: {alumno_encontrado.asignatura}")
+                print("\nDatos del alumno ,nombre, ,apellidos,:")
+                print("Sección: ,alumno_encontrado.seccion,")
+                print("Asignatura: ,alumno_encontrado.asignatura,")
                 if hasattr(alumno_encontrado, 'notas'):
-                    print(f"Notas: {alumno_encontrado.notas}")
+                    print("Notas: ,alumno_encontrado.notas, ")
                 else:
                     print("Notas: No ingresadas")
             else:
@@ -154,9 +154,9 @@ def mostrar_por_docentes():
     if docente:
         print("\nLista de Docentes:")
         for d in docentes:
-            print(f"\nNombre: {d.nombre} {d.apellidos}")
-            print(f"Asignatura: {d.asignatura}")
-            print(f"Sección: {d.seccion}")
+            print("\nNombre: ,d.nombre, ,d.apellidos,")
+            print("Asignatura: ,d.asignatura, ")
+            print("Sección: ,d.seccion, ")
         print("\nFin de la lista.")
 
 def validar_docente():
