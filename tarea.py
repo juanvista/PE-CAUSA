@@ -55,10 +55,10 @@ def actualizar_alumno():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print("\nDatos actuales del alumno ,nombre, ,apellidos,:")
-                print("Sección: ,alumno_encontrado.seccion, ")
-                print("Asignatura: ,alumno_encontrado.asignatura,")
-                print("Edad: ,alumno_encontrado.edad, ")
+                print("\nDatos actuales del alumno ,nombre, ,apellidos,:)
+                print("Sección:" ,alumno_encontrado.seccion, )
+                print("Asignatura:" ,alumno_encontrado.asignatura,)
+                print("Edad:" ,alumno_encontrado.edad, )
 
                 confirmacion = input("¿Está seguro de actualizar este alumno? (SI/NO): ").upper()
                 if confirmacion == "SI":
@@ -86,9 +86,9 @@ def eliminar_alumno():
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
                 print("\nDatos del alumno ,nombre, ,apellidos, a eliminar:")
-                print("Sección: ,alumno_encontrado.seccion, ")
-                print("Asignatura: ,alumno_encontrado.asignatura, ")
-                print("Edad: ,alumno_encontrado.edad, ")
+                print("Sección:" ,alumno_encontrado.seccion, )
+                print("Asignatura:" ,alumno_encontrado.asignatura, )
+                print("Edad:" ,alumno_encontrado.edad, )
 
                 confirmacion = input("¿Está seguro de eliminar este alumno? (SI/NO): ").upper()
                 if confirmacion == "SI":
@@ -113,13 +113,13 @@ def listar_por_secciones():
             print("\nLista de Alumnos:")
             for alumno in alumnos_seccion:
                 print("\nNombre: ,alumno.nombre, ,alumno.apellidos,")
-                print("Sección: ,alumno.seccion,")
-                print("Asignatura: ,alumno.asignatura,")
+               print("Sección:" ,alumno_encontrado.seccion)
+                print("Asignatura:" ,alumno.asignatura,)
                 if hasattr(alumno, 'notas'):
-                    print("Notas: ,alumno.notas, ")
+                    print("Notas:" ,alumno.notas, )
                 else:
-                    print("Notas: No ingresadas")
-            print(f"\nDocente a cargo: {docente.nombre} {docente.apellidos}")
+                    print("Notas:" No ingresadas)
+            print("\nDocente a cargo: ,docente.nombre, docente.apellidos")
         else:
             print("No hay alumnos en la sección o asignatura especificada.")
 
