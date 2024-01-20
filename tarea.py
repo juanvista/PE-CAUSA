@@ -9,6 +9,24 @@
         self.rol = rol
         self.seccion = seccion
 
+Usuario = [
+    {'nombre': 'JORGE EDUARDO', 'apellido': 'ALIAGA QUINTANA', 'edad': 31, 'rut': '17705131-4', 'asignatura': 'ANALISIS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 61},
+    {'nombre': 'RAMIRO IGNACIO', 'apellido': 'ALVAREZ MOLINA', 'edad': 22, 'rut': '20345313-2', 'asignatura': 'ANALISIS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 61},
+    {'nombre': 'JUAN LUIS', 'apellido': 'AYALA PEREZ', 'edad': 28, 'rut': '16277951-6', 'asignatura': 'ANALISIS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 62},
+    {'nombre': 'MIGUEL ANGEL ANDRES', 'apellido': 'BRAVO PINO', 'edad': 36, 'rut': '18054340-6', 'asignatura': 'PROGRAMACION', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 61},
+    {'nombre': 'CRISTIAN ISAIAS', 'apellido': 'BUSTOS CABRERA', 'edad': 34, 'rut': '18357224-5', 'asignatura': 'PROGRAMACION', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 61},
+    {'nombre': 'EDUARDO JESUS', 'apellido': 'DOMINGUEZ CAMPOS', 'edad': 26, 'rut': '17709058-1', 'asignatura': 'PROGRAMACION', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 61},
+    {'nombre': 'CRISTHIAN ANDRÉS', 'apellido': 'ECHEVERRÍA BUSTAMANTE', 'edad': 38, 'rut': '15921029-4', 'asignatura': 'PROGRAMACION', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 61},
+    {'nombre': 'NICOLAS ALEXANDER', 'apellido': 'ESPINOZA REYES', 'edad': 33, 'rut': '18026553-8', 'asignatura': 'PROGRAMACION', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 62},
+    {'nombre': 'JAVIER EDUARDO', 'apellido': 'FIGUEROA ESCOBAR', 'edad': 31, 'rut': '16104424-5', 'asignatura': 'PROGRAMACION', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 62},
+    {'nombre': 'FRANKLIN EDUARDO', 'apellido': 'MARTINEZ PORTILLO', 'edad': 20, 'rut': '26320485-9', 'asignatura': 'BASE DE DATOS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 1},
+    {'nombre': 'FRANCISCO JAVIER', 'apellido': 'MEDINA MALDONADO', 'edad': 28, 'rut': '18881480-8', 'asignatura': 'BASE DE DATOS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 1},
+    {'nombre': 'OMAR IGNACIO', 'apellido': 'MENA VERGARA', 'edad': 33, 'rut': '17766939-3', 'asignatura': 'BASE DE DATOS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 2},
+    {'nombre': 'SAMUEL ANDRES', 'apellido': 'MENDOZA BELLORIN', 'edad': 34, 'rut': '26141750-2', 'asignatura': 'BASE DE DATOS', 'nota': None, 'rol': 'ESTUDIANTE', 'seccion': 2},]
+
+Docente = [{'nombre': 'PATRICIO EDUARDO', 'apellido': 'VERGARA MALDONADO', 'edad': 33, 'rut': '16814286-2', 'asignatura': 'ANALISIS - PROGRAMACION', 'nota': None, 'rol': 'PROFESOR', 'seccion': '61-62'},
+    {'nombre': 'DIEGO RICARDO', 'apellido': 'YAÑEZ MUÑOZ', 'edad': 40, 'rut': '19112325-5', 'asignatura': 'BASE DE DATOS - ANALISIS', 'nota': None, 'rol': 'PROFESOR', 'seccion': '62-1-2'},
+    {'nombre': 'FELIPE', 'apellido': 'ARAYA LUNA', 'edad': 40, 'rut': '15533868-7', 'asignatura': 'PROGRAMACION - BASE DE DATOS','nota': None, 'rol': 'PROFESOR', 'seccion': '62-1-2'},]
 
 
 
