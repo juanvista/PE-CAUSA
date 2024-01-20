@@ -85,7 +85,7 @@ def eliminar_alumno():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print("\nDatos del alumno ,nombre, ,apellidos, a eliminar:")
+                print("\nDatos del alumno" , nombre, apellidos, "a eliminar:")
                 print("Sección:" ,alumno_encontrado.seccion, )
                 print("Asignatura:" ,alumno_encontrado.asignatura, )
                 print("Edad:" ,alumno_encontrado.edad, )
@@ -112,7 +112,7 @@ def listar_por_secciones():
         if alumnos_seccion:
             print("\nLista de Alumnos:")
             for alumno in alumnos_seccion:
-                print("\nNombre: ,alumno.nombre, ,alumno.apellidos,")
+                print(" \nNombre:", alumno.nombre ," " ,alumno.apellido,  " : "  )
                print("Sección:" ,alumno_encontrado.seccion)
                 print("Asignatura:" ,alumno.asignatura,)
                 if hasattr(alumno, 'notas'):
@@ -137,7 +137,7 @@ def mostrar_por_alumnos():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print("\nDatos del alumno ,nombre, ,apellidos,:")
+                print("\nDatos del alumno ", nombre , apellido , ":" )
                 print("Sección: ,alumno_encontrado.seccion,")
                 print("Asignatura: ,alumno_encontrado.asignatura,")
                 if hasattr(alumno_encontrado, 'notas'):
