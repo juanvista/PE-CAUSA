@@ -34,7 +34,7 @@ def ingresar_notas():
         asignatura = docente.asignatura
         for usuario in usuarios:
             if usuario.rol == 'alumno' and usuario.seccion == seccion and usuario.asignatura == asignatura:
-                print(f"\nIngresar notas para {usuario.nombre} {usuario.apellidos}:")
+                print("\nIngresar notas para" , usuario.nombre, usuario.apellidos , " : ")
                 nota1 = float(input("Ingrese Nota 1: "))
                 nota2 = float(input("Ingrese Nota 2: "))
                 nota3 = float(input("Ingrese Nota 3: "))
