@@ -55,7 +55,7 @@ def actualizar_alumno():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print("\nDatos actuales del alumno ,nombre, ,apellidos,:)
+                print("\nDatos actuales del alumno" ,nombre, ,apellidos,":")
                 print("Sección:" ,alumno_encontrado.seccion, )
                 print("Asignatura:" ,alumno_encontrado.asignatura,)
                 print("Edad:" ,alumno_encontrado.edad, )
@@ -138,10 +138,10 @@ def mostrar_por_alumnos():
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
                 print("\nDatos del alumno ", nombre , apellido , ":" )
-                print("Sección: ,alumno_encontrado.seccion,")
-                print("Asignatura: ,alumno_encontrado.asignatura,")
+                print("Sección:" ,alumno_encontrado.seccion,")
+                print("Asignatura:" ,alumno_encontrado.asignatura,")
                 if hasattr(alumno_encontrado, 'notas'):
-                    print("Notas: ,alumno_encontrado.notas, ")
+                    print("Notas:" ,alumno_encontrado.notas, ")
                 else:
                     print("Notas: No ingresadas")
             else:
