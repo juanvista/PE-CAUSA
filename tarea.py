@@ -55,7 +55,7 @@ def actualizar_alumno():
 
         if alumno_encontrado:
             if docente.seccion == alumno_encontrado.seccion and docente.asignatura == alumno_encontrado.asignatura:
-                print("\nDatos actuales del alumno" ,nombre, ,apellidos,":")
+                print("\nDatos actuales del alumno" ,nombre, apellidos, ":")
                 print("Sección:" ,alumno_encontrado.seccion, )
                 print("Asignatura:" ,alumno_encontrado.asignatura,)
                 print("Edad:" ,alumno_encontrado.edad, )
@@ -154,9 +154,9 @@ def mostrar_por_docentes():
     if docente:
         print("\nLista de Docentes:")
         for d in docentes:
-            print("\nNombre: ,d.nombre, ,d.apellidos,")
-            print("Asignatura: ,d.asignatura, ")
-            print("Sección: ,d.seccion, ")
+            print("\nNombre:" ,d.nombre, ,d.apellidos,)
+            print("Asignatura:" ,d.asignatura, )
+            print("Sección:" ,d.seccion, )
         print("\nFin de la lista.")
 
 def validar_docente():
@@ -185,24 +185,24 @@ docentes = [Docente("Profesor", "Apellido", "Matematicas", "A")]
 # Menú principal
 while True:
     print("\nMenú Principal:")
-    print("I. Ingresar Usuario")
-    print("II. Ingresar Notas")
-    print("III. Actualizar Alumno")
-    print("IV. Eliminar Alumno")
-    print("V. Mostrar")
-    print("VI. Salir del Programa")
+    print("1. Ingresar Usuario")
+    print("2. Ingresar Notas")
+    print("3. Actualizar Alumno")
+    print("4. Eliminar Alumno")
+    print("5. Mostrar")
+    print("6. Salir del Programa")
 
-    opcion_principal = input("Ingrese la opción deseada (I, II, III, IV, V, VI): ").upper()
+    opcion_principal = input("Ingrese la opción deseada (1, 2, 3, 4, 5, 6): ").upper()
 
-    if opcion_principal == "I":
+    if opcion_principal == "1":
         ingresar_usuario()
-    elif opcion_principal == "II":
+    elif opcion_principal == "2":
         ingresar_notas()
-    elif opcion_principal == "III":
+    elif opcion_principal == "3":
         actualizar_alumno()
-    elif opcion_principal == "IV":
+    elif opcion_principal == "4":
         eliminar_alumno()
-    elif opcion_principal == "V":
+    elif opcion_principal == "5":
         while True:
             print("\nMenú Mostrar:")
             print("A. Listar por Secciones")
@@ -223,7 +223,7 @@ while True:
             else:
                 print("Opción no válida. Intente nuevamente.")
 
-    elif opcion_principal == "VI":
+    elif opcion_principal == "6":
         salir = input("¿Desea salir del programa? (SI/NO): ").upper()
         if salir == "SI":
             print("¡Hasta luego!")
