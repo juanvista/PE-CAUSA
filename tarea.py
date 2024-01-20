@@ -1,4 +1,6 @@
-class Usuario:
+
+
+    class Usuario:
     def __init__(self, nombre, apellidos, edad, asignatura, rol, seccion):
         self.nombre = nombre
         self.apellidos = apellidos
@@ -6,6 +8,8 @@ class Usuario:
         self.asignatura = asignatura
         self.rol = rol
         self.seccion = seccion
+
+
 
 
 def ingresar_usuario():
@@ -230,5 +234,3 @@ while True:
             print("Opción no válida. Volviendo al Menú Principal.")
     else:
         print("Opción no válida. Intente nuevamente.")
-
-    
